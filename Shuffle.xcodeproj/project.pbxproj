@@ -1,0 +1,308 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE0EAAE615AEE570003A8BE5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0EAAE515AEE570003A8BE5 /* Cocoa.framework */; };
+		CE0EAAF015AEE570003A8BE5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE0EAAEE15AEE570003A8BE5 /* InfoPlist.strings */; };
+		CE0EAAF215AEE570003A8BE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0EAAF115AEE570003A8BE5 /* main.m */; };
+		CE0EAAF615AEE570003A8BE5 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CE0EAAF415AEE570003A8BE5 /* Credits.rtf */; };
+		CE0EAAF915AEE570003A8BE5 /* amAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0EAAF815AEE570003A8BE5 /* amAppDelegate.m */; };
+		CE0EAAFC15AEE570003A8BE5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0EAAFA15AEE570003A8BE5 /* MainMenu.xib */; };
+		CE0EAB0415AEEDFF003A8BE5 /* amShuffleController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0EAB0315AEEDFF003A8BE5 /* amShuffleController.m */; };
+		CE0EAB0B15AF193B003A8BE5 /* NSMutableArray+Shuffle.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0EAB0A15AF1702003A8BE5 /* NSMutableArray+Shuffle.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CE0EAAE115AEE570003A8BE5 /* Shuffle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shuffle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE0EAAE515AEE570003A8BE5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		CE0EAAE815AEE570003A8BE5 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		CE0EAAE915AEE570003A8BE5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CE0EAAEA15AEE570003A8BE5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CE0EAAED15AEE570003A8BE5 /* Shuffle-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Shuffle-Info.plist"; sourceTree = "<group>"; };
+		CE0EAAEF15AEE570003A8BE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE0EAAF115AEE570003A8BE5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE0EAAF315AEE570003A8BE5 /* Shuffle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Shuffle-Prefix.pch"; sourceTree = "<group>"; };
+		CE0EAAF515AEE570003A8BE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		CE0EAAF715AEE570003A8BE5 /* amAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = amAppDelegate.h; sourceTree = "<group>"; };
+		CE0EAAF815AEE570003A8BE5 /* amAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = amAppDelegate.m; sourceTree = "<group>"; };
+		CE0EAAFB15AEE570003A8BE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CE0EAB0215AEEDFF003A8BE5 /* amShuffleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = amShuffleController.h; sourceTree = "<group>"; };
+		CE0EAB0315AEEDFF003A8BE5 /* amShuffleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = amShuffleController.m; sourceTree = "<group>"; };
+		CE0EAB0915AF1702003A8BE5 /* NSMutableArray+Shuffle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Shuffle.h"; sourceTree = "<group>"; };
+		CE0EAB0A15AF1702003A8BE5 /* NSMutableArray+Shuffle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Shuffle.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE0EAADE15AEE570003A8BE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE0EAAE615AEE570003A8BE5 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE0EAAD615AEE56F003A8BE5 = {
+			isa = PBXGroup;
+			children = (
+				CE0EAAEB15AEE570003A8BE5 /* Shuffle */,
+				CE0EAAE415AEE570003A8BE5 /* Frameworks */,
+				CE0EAAE215AEE570003A8BE5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE0EAAE215AEE570003A8BE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE0EAAE115AEE570003A8BE5 /* Shuffle.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE0EAAE415AEE570003A8BE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE0EAAE515AEE570003A8BE5 /* Cocoa.framework */,
+				CE0EAAE715AEE570003A8BE5 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE0EAAE715AEE570003A8BE5 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE0EAAE815AEE570003A8BE5 /* AppKit.framework */,
+				CE0EAAE915AEE570003A8BE5 /* CoreData.framework */,
+				CE0EAAEA15AEE570003A8BE5 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		CE0EAAEB15AEE570003A8BE5 /* Shuffle */ = {
+			isa = PBXGroup;
+			children = (
+				CE0EAAF715AEE570003A8BE5 /* amAppDelegate.h */,
+				CE0EAAF815AEE570003A8BE5 /* amAppDelegate.m */,
+				CE0EAAFA15AEE570003A8BE5 /* MainMenu.xib */,
+				CE0EAAEC15AEE570003A8BE5 /* Supporting Files */,
+				CE0EAB0215AEEDFF003A8BE5 /* amShuffleController.h */,
+				CE0EAB0315AEEDFF003A8BE5 /* amShuffleController.m */,
+				CE0EAB0915AF1702003A8BE5 /* NSMutableArray+Shuffle.h */,
+				CE0EAB0A15AF1702003A8BE5 /* NSMutableArray+Shuffle.m */,
+			);
+			path = Shuffle;
+			sourceTree = "<group>";
+		};
+		CE0EAAEC15AEE570003A8BE5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE0EAAED15AEE570003A8BE5 /* Shuffle-Info.plist */,
+				CE0EAAEE15AEE570003A8BE5 /* InfoPlist.strings */,
+				CE0EAAF115AEE570003A8BE5 /* main.m */,
+				CE0EAAF315AEE570003A8BE5 /* Shuffle-Prefix.pch */,
+				CE0EAAF415AEE570003A8BE5 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE0EAAE015AEE570003A8BE5 /* Shuffle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE0EAAFF15AEE570003A8BE5 /* Build configuration list for PBXNativeTarget "Shuffle" */;
+			buildPhases = (
+				CE0EAADD15AEE570003A8BE5 /* Sources */,
+				CE0EAADE15AEE570003A8BE5 /* Frameworks */,
+				CE0EAADF15AEE570003A8BE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shuffle;
+			productName = Shuffle;
+			productReference = CE0EAAE115AEE570003A8BE5 /* Shuffle.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE0EAAD815AEE56F003A8BE5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = am;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = CE0EAADB15AEE56F003A8BE5 /* Build configuration list for PBXProject "Shuffle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CE0EAAD615AEE56F003A8BE5;
+			productRefGroup = CE0EAAE215AEE570003A8BE5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE0EAAE015AEE570003A8BE5 /* Shuffle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE0EAADF15AEE570003A8BE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE0EAAF015AEE570003A8BE5 /* InfoPlist.strings in Resources */,
+				CE0EAAF615AEE570003A8BE5 /* Credits.rtf in Resources */,
+				CE0EAAFC15AEE570003A8BE5 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE0EAADD15AEE570003A8BE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE0EAB0B15AF193B003A8BE5 /* NSMutableArray+Shuffle.m in Sources */,
+				CE0EAAF215AEE570003A8BE5 /* main.m in Sources */,
+				CE0EAAF915AEE570003A8BE5 /* amAppDelegate.m in Sources */,
+				CE0EAB0415AEEDFF003A8BE5 /* amShuffleController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CE0EAAEE15AEE570003A8BE5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE0EAAEF15AEE570003A8BE5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CE0EAAF415AEE570003A8BE5 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE0EAAF515AEE570003A8BE5 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		CE0EAAFA15AEE570003A8BE5 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE0EAAFB15AEE570003A8BE5 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE0EAAFD15AEE570003A8BE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CE0EAAFE15AEE570003A8BE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CE0EAB0015AEE570003A8BE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Shuffle/Shuffle-Prefix.pch";
+				INFOPLIST_FILE = "Shuffle/Shuffle-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CE0EAB0115AEE570003A8BE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Shuffle/Shuffle-Prefix.pch";
+				INFOPLIST_FILE = "Shuffle/Shuffle-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE0EAADB15AEE56F003A8BE5 /* Build configuration list for PBXProject "Shuffle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE0EAAFD15AEE570003A8BE5 /* Debug */,
+				CE0EAAFE15AEE570003A8BE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE0EAAFF15AEE570003A8BE5 /* Build configuration list for PBXNativeTarget "Shuffle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE0EAB0015AEE570003A8BE5 /* Debug */,
+				CE0EAB0115AEE570003A8BE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE0EAAD815AEE56F003A8BE5 /* Project object */;
+}
