@@ -83,6 +83,7 @@
 		CE23855319754E880024C2A5 /* sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sort.h; sourceTree = "<group>"; };
 		CE23855419754E880024C2A5 /* stringlist.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stringlist.c; sourceTree = "<group>"; };
 		CE23855519754E880024C2A5 /* stringlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stringlist.h; sourceTree = "<group>"; };
+		CE2385641975542B0024C2A5 /* fatsort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fatsort.h; sourceTree = "<group>"; };
 		CE811C2519598CB900F742E5 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		CED3EFE21963DBAC00863504 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		CED3EFE41963DBBC00863504 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
@@ -148,13 +149,13 @@
 			children = (
 				CE0EAAF715AEE570003A8BE5 /* amAppDelegate.h */,
 				CE0EAAF815AEE570003A8BE5 /* amAppDelegate.m */,
-				CE0EAAFA15AEE570003A8BE5 /* MainMenu.xib */,
 				CE0EAB0215AEEDFF003A8BE5 /* amShuffleController.h */,
 				CE0EAB0315AEEDFF003A8BE5 /* amShuffleController.m */,
-				CE0EAB0915AF1702003A8BE5 /* NSMutableArray+Shuffle.h */,
-				CE0EAB0A15AF1702003A8BE5 /* NSMutableArray+Shuffle.m */,
 				CE2385361974FA2A0024C2A5 /* amFlashDevices.h */,
 				CE2385371974FA2A0024C2A5 /* amFlashDevices.m */,
+				CE0EAB0915AF1702003A8BE5 /* NSMutableArray+Shuffle.h */,
+				CE0EAB0A15AF1702003A8BE5 /* NSMutableArray+Shuffle.m */,
+				CE0EAAFA15AEE570003A8BE5 /* MainMenu.xib */,
 				CE0EAAEC15AEE570003A8BE5 /* Supporting Files */,
 			);
 			path = Shuffle;
@@ -186,6 +187,7 @@
 				CE23854219754E880024C2A5 /* FAT_fs.c */,
 				CE23854319754E880024C2A5 /* FAT_fs.h */,
 				CE23854419754E880024C2A5 /* fatsort.c */,
+				CE2385641975542B0024C2A5 /* fatsort.h */,
 				CE23854519754E880024C2A5 /* fileio.c */,
 				CE23854619754E880024C2A5 /* fileio.h */,
 				CE23854719754E880024C2A5 /* mallocv.c */,
@@ -234,7 +236,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = am;
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0510;
 			};
 			buildConfigurationList = CE0EAADB15AEE56F003A8BE5 /* Build configuration list for PBXProject "Shuffle" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -327,8 +329,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -342,7 +349,9 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
@@ -354,8 +363,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -363,7 +377,9 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				SDKROOT = macosx;
@@ -373,6 +389,7 @@
 		CE0EAB0015AEE570003A8BE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Shuffle/Shuffle-Prefix.pch";
 				INFOPLIST_FILE = "Shuffle/Shuffle-Info.plist";
@@ -384,6 +401,7 @@
 		CE0EAB0115AEE570003A8BE5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Shuffle/Shuffle-Prefix.pch";
 				INFOPLIST_FILE = "Shuffle/Shuffle-Info.plist";
