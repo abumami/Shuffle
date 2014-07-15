@@ -764,6 +764,7 @@
         <customObject id="420" customClass="NSFontManager"/>
         <customObject id="553" customClass="amShuffleController">
             <connections>
+                <outlet property="close" destination="619" id="s4K-SY-VcU"/>
                 <outlet property="shuffle" destination="610" id="614"/>
                 <outlet property="vols" destination="YfU-we-DJx" id="azp-Xp-saZ"/>
             </connections>

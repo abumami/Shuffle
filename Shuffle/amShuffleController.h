@@ -14,6 +14,7 @@
     __weak NSButton *clean;
     __weak NSTextField *path;
     __weak NSButtonCell *shuffle;
+    __weak NSButtonCell *_close;
     
     amFlashDevices *fd;
     
@@ -26,4 +27,5 @@
 @property (weak) IBOutlet NSTextField *path;
 @property (weak) IBOutlet NSButtonCell *shuffle;
 @property (weak) IBOutlet NSTableView *tableView;
+@property (weak) IBOutlet NSButtonCell *close;
 @end

@@ -26,6 +26,7 @@ int fs(char *filename, char *incl);
 @synthesize shuffle;
 @synthesize path;
 @synthesize vols;
+@synthesize close;
 
 - (id)init {
     self = [super init];
@@ -36,6 +37,8 @@ int fs(char *filename, char *incl);
 }
 
 - (IBAction)shuffle:(id)sender {
+    
+    [close setEnabled:NO];
 
     NSInteger sel = [vols selectedRow];
     NSString *bsd = [fd getBSD:sel];
@@ -57,6 +60,8 @@ int fs(char *filename, char *incl);
     [taskm setArguments:[NSArray arrayWithObjects:@"mount", bsd, nil]];
 	[taskm launch];
 	[taskm waitUntilExit];
+    
+    [close setEnabled:YES];
 }
 
 @end
