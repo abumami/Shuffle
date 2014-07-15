@@ -7,19 +7,23 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "amFlashDevices.h"
 
 @interface amShuffleController : NSObject {
 
     __weak NSButton *clean;
     __weak NSTextField *path;
     __weak NSButtonCell *shuffle;
+    
+    amFlashDevices *fd;
+    
+    NSMutableArray *devices;
 }
 
-- (IBAction)browse:(id)sender;
 - (IBAction)shuffle:(id)sender;
-- (IBAction)clean:(id)sender;
 
+@property (weak) IBOutlet NSTableView *vols;
 @property (weak) IBOutlet NSTextField *path;
 @property (weak) IBOutlet NSButtonCell *shuffle;
-@property (weak) IBOutlet NSButton *clean;
+@property (weak) IBOutlet NSTableView *tableView;
 @end
