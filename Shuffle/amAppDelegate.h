@@ -3,7 +3,7 @@
 //  Shuffle
 //
 //  Created by Abu Mami on 7/12/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 Abu Mami. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>

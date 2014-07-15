@@ -3,6 +3,7 @@
 //  Shuffle
 //
 //  Created by Abu Mami on 7/15/14.
+//  Copyright (c) 2012 Abu Mami. All rights reserved.
 //
 //
 
@@ -55,7 +56,6 @@
             statfs([volumePath UTF8String], &tStats);
             NSString *bsd = [NSString stringWithUTF8String:tStats.f_mntfromname];
             printf("%s\n", [[NSString stringWithFormat:@"%@	%@ %@	%@	%d	%d	%d", volumePath, bsd, description, volumeType, isRemovable, isWritable, isUnmountable] UTF8String]);
-            //[vols addObject:bsd];
             
             NSDictionary *entry = [NSDictionary dictionaryWithObjectsAndKeys:
                                    volumePath, @"vol",

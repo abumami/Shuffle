@@ -3,7 +3,7 @@
 //  Shuffle
 //
 //  Created by Abu Mami on 7/12/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 Abu Mami. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -11,10 +11,8 @@
 
 @interface amShuffleController : NSObject {
 
-    __weak NSButton *clean;
-    __weak NSTextField *path;
     __weak NSButtonCell *shuffle;
-    __weak NSButtonCell *_close;
+    __weak NSButtonCell *close;
     
     amFlashDevices *fd;
     
@@ -24,8 +22,6 @@
 - (IBAction)shuffle:(id)sender;
 
 @property (weak) IBOutlet NSTableView *vols;
-@property (weak) IBOutlet NSTextField *path;
 @property (weak) IBOutlet NSButtonCell *shuffle;
-@property (weak) IBOutlet NSTableView *tableView;
 @property (weak) IBOutlet NSButtonCell *close;
 @end

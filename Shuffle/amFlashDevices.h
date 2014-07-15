@@ -3,25 +3,12 @@
 //  Shuffle
 //
 //  Created by Abu Mami on 7/15/14.
+//  Copyright (c) 2012 Abu Mami. All rights reserved.
 //
 //
 
 #import <Foundation/Foundation.h>
 
-//@interface amFlashDevices : NSObject
-//
-//@end
-
-
-/*
-@interface volUSB : NSObject
-{
-@public
-    NSString* bsdName;
-    NSString* volName;
-}
-@end
-*/
 
 @interface amFlashDevices : NSObject {
     
