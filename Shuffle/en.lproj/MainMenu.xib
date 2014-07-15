@@ -665,6 +665,11 @@
                         </buttonCell>
                         <connections>
                             <action selector="shuffle:" target="553" id="613"/>
+                            <binding destination="u4B-Ld-sdY" name="enabled" keyPath="selection.anything" id="PGS-lP-fxb">
+                                <dictionary key="options">
+                                    <string key="NSValueTransformerName">NSIsNil</string>
+                                </dictionary>
+                            </binding>
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="619">
