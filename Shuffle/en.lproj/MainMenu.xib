@@ -650,21 +650,22 @@
         <window title="Shuffle" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="371">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="447" height="232"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
+            <rect key="contentRect" x="335" y="390" width="494" height="232"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
             <view key="contentView" autoresizesSubviews="NO" id="372">
-                <rect key="frame" x="0.0" y="0.0" width="447" height="232"/>
+                <rect key="frame" x="0.0" y="0.0" width="494" height="232"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button autoresizesSubviews="NO" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="609">
-                        <rect key="frame" x="351" y="40" width="82" height="32"/>
+                    <button autoresizesSubviews="NO" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="609">
+                        <rect key="frame" x="395" y="40" width="85" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="push" title="Shuffle" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="610">
+                        <buttonCell key="cell" type="push" title="Shuffle" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="610">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
                             <action selector="shuffle:" target="553" id="613"/>
+                            <binding destination="553" name="argument" keyPath="self.shuffle" id="fb3-Gz-wBM"/>
                             <binding destination="u4B-Ld-sdY" name="enabled" keyPath="selection.anything" id="PGS-lP-fxb">
                                 <dictionary key="options">
                                     <string key="NSValueTransformerName">NSIsNil</string>
@@ -672,8 +673,8 @@
                             </binding>
                         </connections>
                     </button>
-                    <button verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="619">
-                        <rect key="frame" x="351" y="13" width="82" height="32"/>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="619">
+                        <rect key="frame" x="395" y="13" width="85" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="73" id="649"/>
@@ -686,11 +687,11 @@
                             <action selector="terminate:" target="-2" id="628"/>
                         </connections>
                     </button>
-                    <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lay-hT-XM8">
-                        <rect key="frame" x="20" y="20" width="312" height="192"/>
+                    <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lay-hT-XM8">
+                        <rect key="frame" x="20" y="20" width="309" height="192"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <clipView key="contentView" ambiguous="YES" misplaced="YES" id="Mhq-L8-wii">
-                            <rect key="frame" x="1" y="17" width="310" height="174"/>
+                        <clipView key="contentView" id="Mhq-L8-wii">
+                            <rect key="frame" x="1" y="17" width="307" height="174"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" headerView="zVM-TM-H4o" id="YfU-we-DJx">
@@ -738,7 +739,7 @@
                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </clipView>
                         <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="GEh-1n-eau">
-                            <rect key="frame" x="1" y="175" width="310" height="16"/>
+                            <rect key="frame" x="1" y="175" width="307" height="16"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                         <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="dfG-E1-tbI">
@@ -750,9 +751,64 @@
                             <autoresizingMask key="autoresizingMask"/>
                         </tableHeaderView>
                     </scrollView>
+                    <matrix verticalHuggingPriority="750" autorecalculatesCellSize="YES" translatesAutoresizingMaskIntoConstraints="NO" id="24R-0z-iK4">
+                        <rect key="frame" x="354" y="133" width="120" height="58"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        <size key="cellSize" width="120" height="18"/>
+                        <size key="intercellSpacing" width="4" height="2"/>
+                        <buttonCell key="prototype" type="radio" title="Radio" imagePosition="left" alignment="left" inset="2" id="puQ-d0-eaZ">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <cells>
+                            <column>
+                                <buttonCell type="radio" title="FAT" imagePosition="left" alignment="left" tag="1" inset="2" id="hXE-WP-vj5">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <buttonCell type="radio" title="Numbered" imagePosition="left" alignment="left" tag="2" inset="2" id="GgB-T7-svp">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <buttonCell type="radio" title="Both" imagePosition="left" alignment="left" tag="3" inset="2" id="KV2-ne-DSh">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </column>
+                        </cells>
+                        <connections>
+                            <action selector="findSelectedButton:" target="553" id="R86-Ps-HrS"/>
+                        </connections>
+                    </matrix>
+                    <box autoresizesSubviews="NO" title="Randomize method" borderType="line" translatesAutoresizingMaskIntoConstraints="NO" id="f1T-dW-PNL">
+                        <rect key="frame" x="340" y="120" width="137" height="92"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <view key="contentView">
+                            <rect key="frame" x="1" y="1" width="135" height="76"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </view>
+                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                        <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </box>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="619" secondAttribute="bottom" constant="20" symbolic="YES" id="621"/>
+                    <constraint firstItem="619" firstAttribute="top" secondItem="609" secondAttribute="bottom" constant="6" id="3j8-aR-YOt"/>
+                    <constraint firstItem="609" firstAttribute="top" secondItem="24R-0z-iK4" secondAttribute="bottom" constant="65" id="4OV-cQ-ikN"/>
+                    <constraint firstItem="f1T-dW-PNL" firstAttribute="top" secondItem="372" secondAttribute="top" constant="20" symbolic="YES" id="8ao-tg-5sO"/>
+                    <constraint firstItem="619" firstAttribute="leading" secondItem="609" secondAttribute="leading" id="8rg-HG-d2m"/>
+                    <constraint firstItem="lay-hT-XM8" firstAttribute="leading" secondItem="372" secondAttribute="leading" constant="20" symbolic="YES" id="A0l-EA-GiN"/>
+                    <constraint firstItem="619" firstAttribute="leading" secondItem="lay-hT-XM8" secondAttribute="trailing" constant="72" id="GEk-YG-5Um"/>
+                    <constraint firstItem="f1T-dW-PNL" firstAttribute="leading" secondItem="lay-hT-XM8" secondAttribute="trailing" constant="14" id="Hx9-fA-9xF"/>
+                    <constraint firstItem="24R-0z-iK4" firstAttribute="leading" secondItem="lay-hT-XM8" secondAttribute="trailing" constant="25" id="RRM-Nk-iKk"/>
+                    <constraint firstAttribute="trailing" secondItem="619" secondAttribute="trailing" constant="20" symbolic="YES" id="RUG-tq-jbB"/>
+                    <constraint firstItem="619" firstAttribute="bottom" secondItem="lay-hT-XM8" secondAttribute="bottom" id="SA5-6l-9rE"/>
+                    <constraint firstItem="f1T-dW-PNL" firstAttribute="top" secondItem="lay-hT-XM8" secondAttribute="top" id="e50-z6-17P"/>
+                    <constraint firstItem="609" firstAttribute="top" secondItem="f1T-dW-PNL" secondAttribute="bottom" constant="56" id="lEh-Ft-6DL"/>
+                    <constraint firstItem="619" firstAttribute="trailing" secondItem="24R-0z-iK4" secondAttribute="trailing" id="nFt-6a-apl"/>
+                    <constraint firstItem="619" firstAttribute="trailing" secondItem="f1T-dW-PNL" secondAttribute="trailing" id="nmM-ja-NG9"/>
+                    <constraint firstItem="619" firstAttribute="trailing" secondItem="609" secondAttribute="trailing" id="sEA-Nl-rEC"/>
                 </constraints>
             </view>
         </window>
@@ -764,7 +820,9 @@
         <customObject id="420" customClass="NSFontManager"/>
         <customObject id="553" customClass="amShuffleController">
             <connections>
+                <outlet property="btnFat" destination="hXE-WP-vj5" id="xFD-Z5-r2o"/>
                 <outlet property="close" destination="619" id="s4K-SY-VcU"/>
+                <outlet property="randomizeType" destination="24R-0z-iK4" id="PsT-Bh-YVd"/>
                 <outlet property="shuffle" destination="610" id="614"/>
                 <outlet property="vols" destination="YfU-we-DJx" id="azp-Xp-saZ"/>
             </connections>

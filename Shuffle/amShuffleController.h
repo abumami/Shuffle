@@ -13,10 +13,14 @@
 
     __weak NSButtonCell *shuffle;
     __weak NSButtonCell *close;
-    
+    __weak NSMatrix *_randomizeType;
+
     amFlashDevices *fd;
-    
     NSMutableArray *devices;
+    
+    long randType;
+    NSString *vol;
+    NSString *bsd;
 }
 
 - (IBAction)shuffle:(id)sender;
@@ -24,4 +28,6 @@
 @property (weak) IBOutlet NSTableView *vols;
 @property (weak) IBOutlet NSButtonCell *shuffle;
 @property (weak) IBOutlet NSButtonCell *close;
+@property (weak) IBOutlet NSMatrix *randomizeType;
+
 @end
