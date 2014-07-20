@@ -665,12 +665,12 @@
                         </buttonCell>
                         <connections>
                             <action selector="shuffle:" target="553" id="613"/>
-                            <binding destination="553" name="argument" keyPath="self.shuffle" id="fb3-Gz-wBM"/>
                             <binding destination="u4B-Ld-sdY" name="enabled" keyPath="selection.anything" id="PGS-lP-fxb">
                                 <dictionary key="options">
                                     <string key="NSValueTransformerName">NSIsNil</string>
                                 </dictionary>
                             </binding>
+                            <binding destination="553" name="argument" keyPath="self.shuffle" id="fb3-Gz-wBM"/>
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="619">
@@ -755,7 +755,7 @@
                         <rect key="frame" x="354" y="133" width="120" height="58"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                        <size key="cellSize" width="120" height="18"/>
+                        <size key="cellSize" width="88" height="18"/>
                         <size key="intercellSpacing" width="4" height="2"/>
                         <buttonCell key="prototype" type="radio" title="Radio" imagePosition="left" alignment="left" inset="2" id="puQ-d0-eaZ">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
