@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Shuffle : An open source, Objective-C app for Macs, that shuffles MP3 albums (folders) on USB flash drives." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Shuffle</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/abumami/Shuffle">View on GitHub</a>
+
+          <h1 id="project_title">Shuffle</h1>
+          <h2 id="project_tagline">An open source, Objective-C app for Macs, that shuffles MP3 albums (folders) on USB flash drives.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/abumami/Shuffle/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/abumami/Shuffle/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="shuffle" class="anchor" href="#shuffle"><span class="octicon octicon-link"></span></a>Shuffle</h1>
+
+<p>Shuffles MP3 albums (folders) on USB flash drives. Allows shuffling by FAT entries, or by using random numeric prefixes to album names.</p>
+
+<p>I wanted a way to shuffle the order of my classic rock albums on my car’s music flash drive and wrote a quick utility which pre-pended a 3 digit number, in random order, to each album name. This worked fine for a couple cars that I owned, till I got a Toyota Auris Hybrid. The stereo system in this car doesn’t recognize alpha-numeric sort, but rather shows the albums in the order in which they were copied to the flash drive. That forced me to find a way to randomize the order of the FAT entries.</p>
+
+<p>Thanks to Boris Leidner for his awesome fatsort utility (<a href="http://fatsort.sourceforge.net">http://fatsort.sourceforge.net</a>), which I used to handle the FAT entry randomization. I replaced his C code “main” routine with my own routine that provides a direct interface to his code from my program. Boris is a great guy and was patient and helpful.</p>
+
+<p>I implemented a simple UI which lists the USB flash drives found on a Mac. Once a drive is selected, the user can then shuffle the order using one (or both) of the shuffle options.</p>
+
+<p>Hope this helps someone enjoy their music just a little bit more.</p>
+
+<p>Abu Mami</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Shuffle maintained by <a href="https://github.com/abumami">abumami</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
