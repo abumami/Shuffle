@@ -98,7 +98,7 @@ int fs(char *filename, char *incl);
     
     NSMutableArray *array = [[NSMutableArray alloc] init];
     NSFileManager *fileManager = [[NSFileManager alloc] init];
-    NSURL *directoryURL = [NSURL URLWithString:vol];
+    NSURL *directoryURL = [NSURL fileURLWithPath:vol isDirectory:YES];
     NSArray *keys = [NSArray arrayWithObject:NSURLIsDirectoryKey];
     NSDirectoryEnumerator *enumerator = [fileManager
                                          enumeratorAtURL:directoryURL
@@ -200,7 +200,7 @@ int fs(char *filename, char *incl);
     
     NSMutableArray *array = [[NSMutableArray alloc] init];
     NSFileManager *fileManager = [[NSFileManager alloc] init];
-    NSURL *directoryURL = [NSURL URLWithString:vol];
+    NSURL *directoryURL = [NSURL fileURLWithPath:vol isDirectory:YES];
     NSArray *keys = [NSArray arrayWithObject:NSURLIsDirectoryKey];
     NSDirectoryEnumerator *enumerator = [fileManager
                                          enumeratorAtURL:directoryURL
