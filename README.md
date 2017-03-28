@@ -1,5 +1,4 @@
-Shuffle
-=======
+### Shuffle
 
 Shuffles MP3 albums (folders) on USB flash drives. Allows shuffling by FAT entries, or by using random numeric prefixes to album names.
 
